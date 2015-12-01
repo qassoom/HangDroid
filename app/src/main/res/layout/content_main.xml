@@ -12,4 +12,54 @@
     tools:context="net.nitak.hangdroid.MainActivity"
     tools:showIn="@layout/activity_main">
 
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HangDroid"
+            android:id="@+id/hangDroidTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:textSize="40sp"
+            android:textColor="#009b41" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Player"
+            android:id="@+id/singlePlayerButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="60dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi Player"
+            android:id="@+id/multiPlayerButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scores"
+            android:id="@+id/scoresButton"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
 </RelativeLayout>
