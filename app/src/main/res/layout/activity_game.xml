@@ -9,12 +9,112 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.nitak.hangdroid.GameActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/hangdroid_0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/lettersLayout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shade"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Type a letter"
+            android:id="@+id/typleLetterTextLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:editable="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/lettersLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/firstLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/secondLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/thirdLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/fourthLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="40dp" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Game Activity Layout"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/red" />
 </RelativeLayout>

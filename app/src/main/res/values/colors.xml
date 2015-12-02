@@ -6,4 +6,5 @@
     <color name="titleGreen">#009b41</color>
     <color name="gradiantGreen">#00e6b6</color>
     <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
 </resources>
