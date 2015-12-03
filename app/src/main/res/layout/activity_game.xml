@@ -32,7 +32,8 @@
         android:layout_alignParentLeft="false"
         android:layout_marginBottom="10dp"
         android:background="@drawable/shade"
-        android:gravity="center">
+        android:gravity="center"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,18 +43,24 @@
             android:id="@+id/typleLetterTextLabel" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:editable="false" />
+            android:id="@+id/editTextLetter"
+            android:inputType="textCapCharacters"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:layout_weight="0"
+            android:textSize="30dp"
+            android:textColor="@color/red"
+            />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Confirm"
-            android:id="@+id/button" />
+            android:id="@+id/confirm"
+            android:onClick="introduceLetter" />
     </LinearLayout>
 
     <LinearLayout
