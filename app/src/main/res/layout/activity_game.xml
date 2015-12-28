@@ -16,10 +16,7 @@
         android:src="@drawable/hangdroid_0"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/lettersLayout" />
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -52,7 +49,7 @@
             android:editable="false"
             android:layout_weight="0"
             android:textSize="30dp"
-            android:textColor="@color/red"
+            android:textColor="@color/blue"
             />
 
         <Button
@@ -63,6 +60,302 @@
             android:onClick="introduceLetter" />
     </LinearLayout>
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_A"
+            android:textSize="50dp"
+            android:text="A"
+            android:textColor="@color/grey"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_B"
+            android:textSize="50dp"
+            android:text="B"
+            android:textColor="@color/grey"
+
+            android:layout_above="@+id/failed_F"
+            android:layout_toRightOf="@+id/failed_A"
+            android:layout_toEndOf="@+id/failed_C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_C"
+            android:textSize="50sp"
+            android:text="C"
+            android:textColor="@color/grey"
+
+            android:layout_alignEnd="@+id/failed_K" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_D"
+            android:textSize="50dp"
+            android:text="D"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_C"
+            android:layout_toRightOf="@+id/failed_A"
+            android:layout_toEndOf="@+id/failed_A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_E"
+            android:textSize="50dp"
+            android:text="E"
+            android:textColor="@color/grey"
+
+            android:layout_alignBaseline="@+id/failed_F"
+            android:layout_alignBottom="@+id/failed_F"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_F"
+            android:textSize="50dp"
+            android:text="F"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_A"
+            android:layout_alignRight="@+id/failed_H"
+            android:layout_alignEnd="@+id/failed_H" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_G"
+            android:textSize="50dp"
+            android:text="G"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_H"
+            android:layout_toLeftOf="@+id/failed_H"
+            android:layout_toStartOf="@+id/failed_H" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_H"
+            android:textSize="50dp"
+            android:text="H"
+            android:textColor="@color/grey"
+
+            android:layout_above="@+id/failed_J"
+            android:layout_toRightOf="@+id/failed_O"
+            android:layout_toEndOf="@+id/failed_O" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_I"
+            android:textSize="50dp"
+            android:text="I"
+            android:textColor="@color/grey"
+
+            android:layout_alignBaseline="@+id/failed_J"
+            android:layout_alignBottom="@+id/failed_J"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_J"
+            android:textSize="50dp"
+            android:text="J"
+            android:textColor="@color/grey"
+
+            android:layout_marginBottom="32dp"
+            android:layout_above="@+id/failed_L"
+            android:layout_alignRight="@+id/failed_H"
+            android:layout_alignEnd="@+id/failed_H" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_K"
+            android:textSize="50dp"
+            android:text="K"
+            android:textColor="@color/grey"
+
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_L"
+            android:textSize="50dp"
+            android:text="L"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_K"
+            android:layout_alignRight="@+id/failed_H"
+            android:layout_alignEnd="@+id/failed_H" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_M"
+            android:textSize="50dp"
+            android:text="M"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_K"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_N"
+            android:textSize="50dp"
+            android:text="N"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_L"
+            android:layout_toRightOf="@+id/failed_M"
+            android:layout_toEndOf="@+id/failed_M" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_O"
+            android:textSize="50dp"
+            android:text="O"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_M"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_P"
+            android:textSize="50dp"
+            android:text="P"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_N"
+            android:layout_alignRight="@+id/failed_N"
+            android:layout_alignEnd="@+id/failed_N" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_Q"
+            android:textSize="50dp"
+            android:text="Q"
+            android:textColor="@color/grey"
+
+            android:layout_below="@+id/failed_N"
+            android:layout_toRightOf="@+id/failed_D"
+            android:layout_toEndOf="@+id/failed_P"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_R"
+            android:textSize="50dp"
+            android:text="R"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_Q"
+            android:layout_toRightOf="@+id/failed_Q"
+            android:layout_toEndOf="@+id/failed_Q"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_S"
+            android:textSize="50dp"
+            android:text="S"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_R"
+            android:layout_toRightOf="@+id/failed_R"
+            android:layout_toEndOf="@+id/failed_R"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/failed_T"
+        android:textSize="50dp"
+        android:text="T"
+        android:textColor="@color/grey"
+
+        android:layout_alignTop="@+id/failed_S"
+        android:layout_toRightOf="@+id/failed_S"
+        android:layout_toEndOf="@+id/failed_S"
+        android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_U"
+            android:textSize="50dp"
+            android:text="U"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_T"
+            android:layout_toRightOf="@+id/failed_T"
+            android:layout_toEndOf="@+id/failed_T"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/failed_V"
+            android:textSize="50dp"
+            android:text="V"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/failed_U"
+            android:layout_toRightOf="@+id/failed_U"
+            android:layout_toEndOf="@+id/failed_U"
+            android:layout_marginLeft="10dp" />
+    </GridLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -70,7 +363,7 @@
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:id="@+id/lettersLayout">
+        android:id="@+id/sucessfulLettersLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,15 +406,8 @@
             android:textSize="40dp" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/red" />
+
 </RelativeLayout>
+
+
+

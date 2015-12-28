@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.nitak.hangdroid.GameActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/hangdroid_0_0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/letters_table"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/sucessfulLettersLayout"
+        android:layout_toStartOf="@+id/sucessfulLettersLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_A"
+                android:textSize="39sp"
+                android:text="@string/letter_A"
+                android:textColor="@color/grey"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:onClick="clickedLetter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_B"
+                android:textSize="39sp"
+                android:text="@string/letter_B"
+                android:textColor="@color/grey"
+
+                android:layout_above="@+id/letter_F"
+                android:layout_toRightOf="@+id/letter_A"
+                android:layout_toEndOf="@+id/letter_C"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_C"
+                android:textSize="39sp"
+                android:text="@string/letter_C"
+                android:textColor="@color/grey"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_D"
+                android:textSize="39sp"
+                android:text="@string/letter_D"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_C"
+                android:layout_toRightOf="@+id/letter_A"
+                android:layout_toEndOf="@+id/letter_A"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_E"
+                android:textSize="39sp"
+                android:text="@string/letter_E"
+                android:textColor="@color/grey"
+
+                android:layout_alignBaseline="@+id/letter_F"
+                android:layout_alignBottom="@+id/letter_F"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_F"
+                android:textSize="39sp"
+                android:text="@string/letter_F"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_A"
+                android:layout_alignRight="@+id/letter_H"
+                android:layout_alignEnd="@+id/letter_H"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_G"
+                android:textSize="39sp"
+                android:text="@string/letter_G"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_H"
+                android:layout_toLeftOf="@+id/letter_H"
+                android:layout_toStartOf="@+id/letter_H"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_H"
+                android:textSize="39sp"
+                android:text="@string/letter_H"
+                android:textColor="@color/grey"
+
+                android:layout_above="@+id/letter_J"
+                android:layout_toRightOf="@+id/letter_O"
+                android:layout_toEndOf="@+id/letter_O"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_I"
+                android:textSize="39sp"
+                android:text="@string/letter_I"
+                android:textColor="@color/grey"
+
+                android:layout_alignBaseline="@+id/letter_J"
+                android:layout_alignBottom="@+id/letter_J"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_J"
+                android:textSize="39sp"
+                android:text="@string/letter_J"
+                android:textColor="@color/grey"
+
+                android:layout_above="@+id/letter_L"
+                android:layout_alignRight="@+id/letter_H"
+                android:layout_alignEnd="@+id/letter_H"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_K"
+                android:textSize="39sp"
+                android:text="@string/letter_K"
+                android:textColor="@color/grey"
+
+                android:layout_centerVertical="true"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_L"
+                android:textSize="39sp"
+                android:text="@string/letter_L"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_K"
+                android:layout_alignRight="@+id/letter_H"
+                android:layout_alignEnd="@+id/letter_H"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_M"
+                android:textSize="39sp"
+                android:text="@string/letter_M"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_K"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_N"
+                android:textSize="39sp"
+                android:text="@string/letter_N"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_L"
+                android:layout_toRightOf="@+id/letter_M"
+                android:layout_toEndOf="@+id/letter_M"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_O"
+                android:textSize="39sp"
+                android:text="@string/letter_O"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_M"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_P"
+                android:textSize="39sp"
+                android:text="@string/letter_P"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_N"
+                android:layout_alignRight="@+id/letter_N"
+                android:layout_alignEnd="@+id/letter_N"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_Q"
+                android:textSize="39sp"
+                android:text="@string/letter_Q"
+                android:textColor="@color/grey"
+
+                android:layout_below="@+id/letter_N"
+                android:layout_toRightOf="@+id/letter_D"
+                android:layout_toEndOf="@+id/letter_P"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_R"
+                android:textSize="39sp"
+                android:text="@string/letter_R"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_Q"
+                android:layout_toRightOf="@+id/letter_Q"
+                android:layout_toEndOf="@+id/letter_Q"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_S"
+                android:textSize="39sp"
+                android:text="@string/letter_S"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_R"
+                android:layout_toRightOf="@+id/letter_R"
+                android:layout_toEndOf="@+id/letter_R"
+                android:clickable="true" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/letter_T"
+            android:textSize="39sp"
+            android:text="@string/letter_T"
+            android:textColor="@color/grey"
+
+            android:layout_alignTop="@+id/letter_S"
+            android:layout_toRightOf="@+id/letter_S"
+            android:layout_toEndOf="@+id/letter_S"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_U"
+                android:textSize="39sp"
+                android:text="@string/letter_U"
+                android:textColor="@color/grey"
+
+                android:layout_alignTop="@+id/letter_T"
+                android:layout_toRightOf="@+id/letter_T"
+                android:layout_toEndOf="@+id/letter_T"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_V"
+                android:textSize="39sp"
+                android:text="@string/letter_V"
+                android:textColor="@color/grey"
+                android:layout_alignTop="@+id/letter_U"
+                android:layout_toRightOf="@+id/letter_U"
+                android:layout_toEndOf="@+id/letter_U"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_W"
+                android:textSize="39sp"
+                android:text="@string/letter_W"
+                android:textColor="@color/grey"
+                android:layout_alignTop="@+id/letter_U"
+                android:layout_toRightOf="@+id/letter_U"
+                android:layout_toEndOf="@+id/letter_U"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/letter_X"
+                android:textSize="39sp"
+                android:text="@string/letter_X"
+                android:textColor="@color/grey"
+                android:layout_alignTop="@+id/letter_U"
+                android:layout_toRightOf="@+id/letter_U"
+                android:layout_toEndOf="@+id/letter_U"
+                android:clickable="true" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/letter_Y"
+                android:id="@+id/letter_Y"
+                android:textSize="39sp"
+                android:textColor="@color/grey"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/letter_Z"
+                android:id="@+id/letter_Z"
+                android:textSize="39sp"
+                android:textColor="@color/grey"
+                android:layout_column="1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☻"
+                android:id="@+id/smilyFace"
+                android:textSize="39sp"
+                android:textColor="@color/grey"
+                android:layout_column="2"
+                android:clickable="true" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shade"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Type a letter"
+            android:id="@+id/typleLetterTextLabel" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLetter"
+            android:inputType="textCapCharacters"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:layout_weight="0"
+            android:textSize="30dp"
+            android:textColor="@color/blue"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/confirm"
+            android:onClick="introduceLetter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sucessfulLettersLayout"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/firstLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/secondLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/thirdLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_"
+            android:id="@+id/fourthLetter"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/failedLettersLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter1"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter2"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter3"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter4"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter5"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:id="@+id/failedLetter6"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/sucessfulLettersLayout"
+            android:layout_alignLeft="@+id/sucessfulLettersLayout"
+            android:layout_alignStart="@+id/sucessfulLettersLayout" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
